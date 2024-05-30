@@ -7,5 +7,14 @@
     <Compile Update="Formcargar.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="modalEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="modalModificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="modalporcentaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

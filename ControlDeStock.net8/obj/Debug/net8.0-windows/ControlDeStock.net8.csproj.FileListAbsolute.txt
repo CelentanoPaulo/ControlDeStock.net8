@@ -18,3 +18,8 @@ C:\Users\Admin\Desktop\Programitas\ControlDeStock.net8\ControlDeStock.net8\obj\D
 C:\Users\Admin\Desktop\Programitas\ControlDeStock.net8\ControlDeStock.net8\obj\Debug\net8.0-windows\ControlDeStock.net8.csproj.AssemblyReference.cache
 C:\Users\Admin\Desktop\Programitas\ControlDeStock.net8\ControlDeStock.net8\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
 C:\Users\Admin\Desktop\Programitas\ControlDeStock.net8\ControlDeStock.net8\obj\Debug\net8.0-windows\ControlD.BD82153B.Up2Date
+C:\Users\Admin\Desktop\Programitas\ControlDeStock.net8\ControlDeStock.net8\obj\Debug\net8.0-windows\ControlDeStock.net8.sourcelink.json
+C:\Users\Admin\Desktop\Programitas\ControlDeStock.net8\ControlDeStock.net8\obj\Debug\net8.0-windows\ControlDeStock.net8.modalEliminar.resources
+C:\Users\Admin\Desktop\Programitas\ControlDeStock.net8\ControlDeStock.net8\obj\Debug\net8.0-windows\ControlDeStock.net8.modalModificar.resources
+C:\Users\Admin\Desktop\Programitas\ControlDeStock.net8\ControlDeStock.net8\obj\Debug\net8.0-windows\ControlDeStock.net8.Properties.Resources.resources
+C:\Users\Admin\Desktop\Programitas\ControlDeStock.net8\ControlDeStock.net8\obj\Debug\net8.0-windows\ControlDeStock.net8.modalporcentaje.resources

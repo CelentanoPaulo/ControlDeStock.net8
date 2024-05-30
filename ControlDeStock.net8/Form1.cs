@@ -6,9 +6,23 @@ namespace ControlDeStock.net8
     public partial class Form1 : Form
     {
         Sistema miSistema;
+        modalModificar miModalModificar = new modalModificar();
+        modalEliminar miModalEliminar = new modalEliminar();
+        private Button currentBtn;
+        private Panel leftBorderBtn;
+        private Button currentBtnDerecha;
+        private Panel leftBorderBtnDerecha;
         public Form1()
         {
             InitializeComponent();
+            leftBorderBtn = new Panel();
+            leftBorderBtn.Size = new Size(7, 62);
+            panelizquierda.Controls.Add(leftBorderBtn);
+
+            leftBorderBtnDerecha = new Panel();
+            leftBorderBtnDerecha.Size = new Size(7, 62);
+            panelderecha.Controls.Add(leftBorderBtnDerecha);
+
         }
 
 
@@ -16,16 +30,19 @@ namespace ControlDeStock.net8
         {
             cbSeleccionProducto1.Items.Clear();
             cbSeleccionProducto2.Items.Clear();
+            miModalModificar.cbModificar.Items.Clear();
+            miModalEliminar.cbEliminar.Items.Clear();
             foreach (Producto p in miSistema.Productos)
             {
                 cbSeleccionProducto1.Items.Add(p.Nombre);
                 cbSeleccionProducto2.Items.Add(p.Nombre);
+                miModalEliminar.cbEliminar.Items.Add(p.Nombre);
+                miModalModificar.cbModificar.Items.Add(p.Nombre);
 
 
             }
 
         }
-
 
         public void FormatoMoneda(System.Windows.Forms.TextBox tb)
         {
@@ -42,23 +59,7 @@ namespace ControlDeStock.net8
             }
         }
 
-        private void cargarNuevoProductoToolStripMenuItem_Click_1(object sender, EventArgs e)
-        {
-            Producto miProducto;
-            Formcargar modalCargar = new Formcargar();
 
-            if (modalCargar.ShowDialog() == DialogResult.Yes)
-            {
-                string nombre = modalCargar.tbProducto.Text;
-                double kg = Convert.ToDouble(modalCargar.tbCantidad.Text);
-                string descripcion = modalCargar.tbDescripcion.Text;
-                DateTime fecha = DateTime.Now;
-                miProducto = new Producto(fecha, nombre, descripcion, kg);
-                miSistema.AgregarProducto(miProducto);
-
-            }
-            Actualizarformulario();
-        }
 
         private void btnCargarVenta_Click_1(object sender, EventArgs e)
         {
@@ -80,6 +81,7 @@ namespace ControlDeStock.net8
 
         private void cbSeleccionProducto1_SelectedIndexChanged_1(object sender, EventArgs e)
         {
+
             int indice = cbSeleccionProducto1.SelectedIndex;
             Producto producto = miSistema.Productos[indice];
             tbDetalle.Text = producto.ReturnDetalle();
@@ -131,24 +133,189 @@ namespace ControlDeStock.net8
             {
                 string rjson = File.ReadAllText("data.json");
 
-                 miSistema = JsonConvert.DeserializeObject<Sistema>(rjson);
+                miSistema = JsonConvert.DeserializeObject<Sistema>(rjson);
 
-                
+
             }
             if (miSistema == null)
             {
                 miSistema = new Sistema();
             }
-                
+            Actualizarformulario();
+
 
         }
-
-      
         private void Form1_FormClosed_1(object sender, FormClosedEventArgs e)
         {
             string objJson = JsonConvert.SerializeObject(miSistema);
             File.WriteAllText("data.json", objJson);
-            
+
+        }
+
+
+        //private void generarExcelToolStripMenuItem_Click(object sender, EventArgs e)
+        //{
+        //    SaveFileDialog saveFileDialog = new SaveFileDialog();
+        //    saveFileDialog.Filter = "Archivo de texto|*.txt|Archivo CSV|*.csv";
+        //    saveFileDialog.Title = "Guardar clientes en archivo de texto";
+
+        //    if (saveFileDialog.ShowDialog() == DialogResult.OK)
+        //    {
+        //        string rutaArchivo = saveFileDialog.FileName;
+        //        miSistema.GenerarCSV(miSistema.Productos, rutaArchivo);
+        //    }
+        //}
+
+        private void ActivateButton(object senderBtn)
+        {
+            if (senderBtn != null)
+            {
+                DisableButton();
+                currentBtn = (Button)senderBtn;
+                currentBtn.BackColor = Color.FromArgb(36, 44, 79);
+                currentBtn.ForeColor = Color.White;
+                currentBtn.TextAlign = ContentAlignment.MiddleRight;
+                //currentBtn.IconColor = color;
+                currentBtn.TextImageRelation = TextImageRelation.TextBeforeImage;
+                currentBtn.ImageAlign = ContentAlignment.MiddleRight;
+
+                leftBorderBtn.BackColor = Color.Wheat;
+                leftBorderBtn.Location = new Point(0, currentBtn.Location.Y);
+                leftBorderBtn.Visible = true;
+                leftBorderBtn.BringToFront();
+
+                //Current Child Form Icon
+                //iconCurrentChildForm.IconChar = currentBtn.IconChar;
+                //iconCurrentChildForm.IconColor = color;
+            }
+        }
+        private void DisableButton()
+        {
+            if (currentBtn != null)
+            {
+                currentBtn.BackColor = Color.RoyalBlue;
+                currentBtn.ForeColor = Color.Gainsboro;
+                currentBtn.TextAlign = ContentAlignment.MiddleCenter;
+                //currentBtn.IconColor = Color.Gainsboro;
+                currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
+                currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
+            }
+        }
+
+        private void ActivateButtonDerecha(object senderBtn)
+        {
+            if (senderBtn != null)
+            {
+                DisableButtonDerecha();
+                currentBtnDerecha = (Button)senderBtn;
+                currentBtnDerecha.BackColor = Color.FromArgb(36, 44, 79);
+                currentBtnDerecha.ForeColor = Color.White;
+                currentBtnDerecha.TextAlign = ContentAlignment.MiddleLeft;
+                //currentBtn.IconColor = color;
+                currentBtnDerecha.TextImageRelation = TextImageRelation.TextBeforeImage;
+                currentBtnDerecha.ImageAlign = ContentAlignment.MiddleLeft;
+
+                leftBorderBtnDerecha.BackColor = Color.Wheat;
+                leftBorderBtnDerecha.Location = new Point(0, currentBtnDerecha.Location.Y);
+                leftBorderBtnDerecha.Visible = true;
+                leftBorderBtnDerecha.BringToFront();
+
+                //Current Child Form Icon
+                //iconCurrentChildForm.IconChar = currentBtn.IconChar;
+                //iconCurrentChildForm.IconColor = color;
+            }
+        }
+        private void DisableButtonDerecha()
+        {
+            if (currentBtnDerecha != null)
+            {
+                currentBtnDerecha.BackColor = Color.RoyalBlue;
+                currentBtnDerecha.ForeColor = Color.Gainsboro;
+                currentBtnDerecha.TextAlign = ContentAlignment.MiddleCenter;
+                //currentBtn.IconColor = Color.Gainsboro;
+                currentBtnDerecha.TextImageRelation = TextImageRelation.ImageBeforeText;
+                currentBtnDerecha.ImageAlign = ContentAlignment.MiddleLeft;
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            Producto miProducto;
+            Formcargar modalCargar = new Formcargar();
+
+            if (modalCargar.ShowDialog() == DialogResult.Yes)
+            {
+                string nombre = modalCargar.tbProducto.Text;
+                double kg = Convert.ToDouble(modalCargar.tbCantidad.Text);
+                string descripcion = modalCargar.tbDescripcion.Text;
+                DateTime fecha = DateTime.Now;
+                miProducto = new Producto(fecha, nombre, descripcion, kg);
+
+                miSistema.AgregarProducto(miProducto, kg, descripcion);
+
+            }
+            Actualizarformulario();
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            int indice = 0;
+            Producto producto;
+            double kginicial = 0;
+            string descripcion = "";
+            //miModalModificar=new modalModificar();
+            if (miModalModificar.ShowDialog() == DialogResult.OK)
+            {
+                indice = miModalModificar.cbModificar.SelectedIndex;
+                producto = miSistema.Productos[indice];
+                kginicial = Convert.ToDouble(miModalModificar.tbKgInicialModif.Text);
+                descripcion = miModalModificar.tbDescripModif.Text;
+                DialogResult result = MessageBox.Show("Esta seguro que desea modificar el producto " + producto.Nombre + "?" + "\nKg Inicial: " + kginicial + "\nDescripcion: " + descripcion, "Confirmar Datos", MessageBoxButtons.OKCancel);
+
+                miSistema.ModificarProducto(producto, kginicial, descripcion);
+            }
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            int indice = 0;
+
+            if (miModalEliminar.ShowDialog() == DialogResult.OK)
+            {
+                indice = miModalEliminar.cbEliminar.SelectedIndex;
+                Producto producto = miSistema.Productos[indice];
+                DialogResult result = MessageBox.Show("Esta seguro que desea eliminar el producto " + producto.Nombre + "?", "Confirmar Datos", MessageBoxButtons.OKCancel);
+                if (result == DialogResult.OK)
+                {
+                    miSistema.EliminarProducto(indice);
+                    Actualizarformulario();
+                }
+
+            }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            ActivateButtonDerecha(sender);
+            modalporcentaje modalPorcentaje=new modalporcentaje();
+            modalPorcentaje.ShowDialog();
+        }
+
+        private void btnGenerarExcel_Click(object sender, EventArgs e)
+        {
+            ActivateButtonDerecha(sender);
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "Archivo de texto|*.txt|Archivo CSV|*.csv";
+            saveFileDialog.Title = "Guardar clientes en archivo de texto";
+
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string rutaArchivo = saveFileDialog.FileName;
+                miSistema.GenerarCSV(miSistema.Productos, rutaArchivo);
+            }
         }
     }
 }

@@ -13,8 +13,9 @@ namespace ControlDeStock.net8
         private List<Producto> productos = new List<Producto>();
         public List<Producto> Productos { get { return productos; } }
 
-        public void AgregarProducto(Producto productoadd)
+        public void AgregarProducto(Producto productoadd,double kgini,string descripcion)
         {
+
             bool existe = false;
             foreach (Producto p in productos)
             {
@@ -22,7 +23,7 @@ namespace ControlDeStock.net8
                 {
                     existe = true;
                     p.Kg += productoadd.Kg;
-                    p.ModificarMismoObjeto(p.inicialKg);
+                    p.ModificarMismoObjeto(kgini,descripcion);
                     break;
 
                 }
@@ -32,6 +33,35 @@ namespace ControlDeStock.net8
             {
                 productos.Add(productoadd);
             }
+        }
+
+        public void EliminarProducto (int indice)
+        {
+            productos.RemoveAt(indice);
+        }
+
+        public void ModificarProducto(Producto producto, double kgini, string descripcion)
+        {
+            producto.ActualizarProducto(kgini, descripcion);
+        }
+
+        public void GenerarCSV(List<Producto> producto, string rutaArchivo)
+        {
+            if (File.Exists(rutaArchivo))
+                File.Delete(rutaArchivo);
+
+            FileStream fs = new FileStream(rutaArchivo, FileMode.Create, FileAccess.Write);
+            StreamWriter sw = new StreamWriter(fs);
+
+            sw.WriteLine($"Fecha y Hora;Producto;Stock en kg;Recaudacion");
+
+            foreach (Producto product in producto)
+            {
+                sw.WriteLine($"{product.Fecha};{product.Nombre};{product.Stock};{product.Ganancias}");
+            }
+
+            sw.Close();
+            fs.Close();
         }
     }
 }

@@ -28,16 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            menuStrip1 = new MenuStrip();
-            archivoToolStripMenuItem = new ToolStripMenuItem();
-            guardarToolStripMenuItem = new ToolStripMenuItem();
-            generarExcelToolStripMenuItem = new ToolStripMenuItem();
-            verHistorialToolStripMenuItem = new ToolStripMenuItem();
-            edicionToolStripMenuItem = new ToolStripMenuItem();
-            cargarNuevoProductoToolStripMenuItem = new ToolStripMenuItem();
-            eliminarProductoToolStripMenuItem = new ToolStripMenuItem();
-            modificarActualizarProductoToolStripMenuItem = new ToolStripMenuItem();
-            acercaDeToolStripMenuItem = new ToolStripMenuItem();
             groupBox1 = new GroupBox();
             labeloculto1 = new Label();
             lblpesos = new Label();
@@ -53,77 +43,19 @@
             tbDetalle = new TextBox();
             label6 = new Label();
             cbSeleccionProducto1 = new ComboBox();
-            menuStrip1.SuspendLayout();
+            panelizquierda = new Panel();
+            btnAcercaDe = new Button();
+            btnModificar = new Button();
+            btnEliminar = new Button();
+            btnCargarNuevo = new Button();
+            panelderecha = new Panel();
+            btnGenerarExcel = new Button();
+            btnCalcularPorc = new Button();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
+            panelizquierda.SuspendLayout();
+            panelderecha.SuspendLayout();
             SuspendLayout();
-            // 
-            // menuStrip1
-            // 
-            menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { archivoToolStripMenuItem, edicionToolStripMenuItem, acercaDeToolStripMenuItem });
-            menuStrip1.Location = new Point(0, 0);
-            menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(654, 28);
-            menuStrip1.TabIndex = 0;
-            menuStrip1.Text = "menuStrip1";
-            // 
-            // archivoToolStripMenuItem
-            // 
-            archivoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { guardarToolStripMenuItem, generarExcelToolStripMenuItem, verHistorialToolStripMenuItem });
-            archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
-            archivoToolStripMenuItem.Size = new Size(73, 24);
-            archivoToolStripMenuItem.Text = "Archivo";
-            // 
-            // guardarToolStripMenuItem
-            // 
-            guardarToolStripMenuItem.Name = "guardarToolStripMenuItem";
-            guardarToolStripMenuItem.Size = new Size(182, 26);
-            guardarToolStripMenuItem.Text = "Guardar";
-            // 
-            // generarExcelToolStripMenuItem
-            // 
-            generarExcelToolStripMenuItem.Name = "generarExcelToolStripMenuItem";
-            generarExcelToolStripMenuItem.Size = new Size(182, 26);
-            generarExcelToolStripMenuItem.Text = "Generar Excel";
-            // 
-            // verHistorialToolStripMenuItem
-            // 
-            verHistorialToolStripMenuItem.Name = "verHistorialToolStripMenuItem";
-            verHistorialToolStripMenuItem.Size = new Size(182, 26);
-            verHistorialToolStripMenuItem.Text = "Ver Historial";
-            // 
-            // edicionToolStripMenuItem
-            // 
-            edicionToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { cargarNuevoProductoToolStripMenuItem, eliminarProductoToolStripMenuItem, modificarActualizarProductoToolStripMenuItem });
-            edicionToolStripMenuItem.Name = "edicionToolStripMenuItem";
-            edicionToolStripMenuItem.Size = new Size(72, 24);
-            edicionToolStripMenuItem.Text = "Edicion";
-            // 
-            // cargarNuevoProductoToolStripMenuItem
-            // 
-            cargarNuevoProductoToolStripMenuItem.Name = "cargarNuevoProductoToolStripMenuItem";
-            cargarNuevoProductoToolStripMenuItem.Size = new Size(301, 26);
-            cargarNuevoProductoToolStripMenuItem.Text = "Cargar nuevo producto";
-            cargarNuevoProductoToolStripMenuItem.Click += cargarNuevoProductoToolStripMenuItem_Click_1;
-            // 
-            // eliminarProductoToolStripMenuItem
-            // 
-            eliminarProductoToolStripMenuItem.Name = "eliminarProductoToolStripMenuItem";
-            eliminarProductoToolStripMenuItem.Size = new Size(301, 26);
-            eliminarProductoToolStripMenuItem.Text = "Eliminar producto";
-            // 
-            // modificarActualizarProductoToolStripMenuItem
-            // 
-            modificarActualizarProductoToolStripMenuItem.Name = "modificarActualizarProductoToolStripMenuItem";
-            modificarActualizarProductoToolStripMenuItem.Size = new Size(301, 26);
-            modificarActualizarProductoToolStripMenuItem.Text = "Modificar / Actualizar producto";
-            // 
-            // acercaDeToolStripMenuItem
-            // 
-            acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            acercaDeToolStripMenuItem.Size = new Size(89, 24);
-            acercaDeToolStripMenuItem.Text = "Acerca de";
             // 
             // groupBox1
             // 
@@ -137,7 +69,7 @@
             groupBox1.Controls.Add(tbVentasKg);
             groupBox1.Controls.Add(btnCancelarVenta);
             groupBox1.Controls.Add(btnCargarVenta);
-            groupBox1.Location = new Point(24, 58);
+            groupBox1.Location = new Point(90, 46);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(295, 380);
             groupBox1.TabIndex = 1;
@@ -242,7 +174,7 @@
             groupBox2.Controls.Add(tbDetalle);
             groupBox2.Controls.Add(label6);
             groupBox2.Controls.Add(cbSeleccionProducto1);
-            groupBox2.Location = new Point(346, 58);
+            groupBox2.Location = new Point(412, 46);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(295, 380);
             groupBox2.TabIndex = 2;
@@ -268,48 +200,146 @@
             // 
             // cbSeleccionProducto1
             // 
+            cbSeleccionProducto1.DropDownHeight = 100;
             cbSeleccionProducto1.FormattingEnabled = true;
+            cbSeleccionProducto1.IntegralHeight = false;
             cbSeleccionProducto1.Location = new Point(6, 56);
             cbSeleccionProducto1.Name = "cbSeleccionProducto1";
             cbSeleccionProducto1.Size = new Size(283, 28);
             cbSeleccionProducto1.TabIndex = 5;
             cbSeleccionProducto1.SelectedIndexChanged += cbSeleccionProducto1_SelectedIndexChanged_1;
             // 
+            // panelizquierda
+            // 
+            panelizquierda.BackColor = Color.Navy;
+            panelizquierda.Controls.Add(btnAcercaDe);
+            panelizquierda.Controls.Add(btnModificar);
+            panelizquierda.Controls.Add(btnEliminar);
+            panelizquierda.Controls.Add(btnCargarNuevo);
+            panelizquierda.Dock = DockStyle.Left;
+            panelizquierda.Location = new Point(0, 0);
+            panelizquierda.Name = "panelizquierda";
+            panelizquierda.Size = new Size(95, 449);
+            panelizquierda.TabIndex = 3;
+            // 
+            // btnAcercaDe
+            // 
+            btnAcercaDe.BackColor = Color.Navy;
+            btnAcercaDe.Dock = DockStyle.Bottom;
+            btnAcercaDe.Font = new Font("Palatino Linotype", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnAcercaDe.ForeColor = SystemColors.ButtonFace;
+            btnAcercaDe.Location = new Point(0, 385);
+            btnAcercaDe.Name = "btnAcercaDe";
+            btnAcercaDe.Size = new Size(95, 64);
+            btnAcercaDe.TabIndex = 3;
+            btnAcercaDe.Text = "Acerca de";
+            btnAcercaDe.UseVisualStyleBackColor = false;
+            // 
+            // btnModificar
+            // 
+            btnModificar.BackColor = Color.Navy;
+            btnModificar.Dock = DockStyle.Top;
+            btnModificar.Font = new Font("Palatino Linotype", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnModificar.ForeColor = SystemColors.ButtonFace;
+            btnModificar.Location = new Point(0, 129);
+            btnModificar.Name = "btnModificar";
+            btnModificar.Size = new Size(95, 62);
+            btnModificar.TabIndex = 2;
+            btnModificar.Text = "Modificar Producto";
+            btnModificar.UseVisualStyleBackColor = false;
+            btnModificar.Click += btnModificar_Click;
+            // 
+            // btnEliminar
+            // 
+            btnEliminar.BackColor = Color.Navy;
+            btnEliminar.Dock = DockStyle.Top;
+            btnEliminar.Font = new Font("Palatino Linotype", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnEliminar.ForeColor = SystemColors.ButtonFace;
+            btnEliminar.Location = new Point(0, 66);
+            btnEliminar.Name = "btnEliminar";
+            btnEliminar.Size = new Size(95, 63);
+            btnEliminar.TabIndex = 1;
+            btnEliminar.Text = "Eliminar Producto";
+            btnEliminar.UseVisualStyleBackColor = false;
+            btnEliminar.Click += btnEliminar_Click;
+            // 
+            // btnCargarNuevo
+            // 
+            btnCargarNuevo.BackColor = Color.Navy;
+            btnCargarNuevo.Dock = DockStyle.Top;
+            btnCargarNuevo.Font = new Font("Palatino Linotype", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnCargarNuevo.ForeColor = SystemColors.ButtonFace;
+            btnCargarNuevo.Location = new Point(0, 0);
+            btnCargarNuevo.Name = "btnCargarNuevo";
+            btnCargarNuevo.Size = new Size(95, 66);
+            btnCargarNuevo.TabIndex = 0;
+            btnCargarNuevo.Text = "Cargar Producto";
+            btnCargarNuevo.UseVisualStyleBackColor = false;
+            btnCargarNuevo.Click += button1_Click;
+            // 
+            // panelderecha
+            // 
+            panelderecha.BackColor = Color.Navy;
+            panelderecha.Controls.Add(btnGenerarExcel);
+            panelderecha.Controls.Add(btnCalcularPorc);
+            panelderecha.Dock = DockStyle.Right;
+            panelderecha.Location = new Point(725, 0);
+            panelderecha.Name = "panelderecha";
+            panelderecha.Size = new Size(102, 449);
+            panelderecha.TabIndex = 4;
+            // 
+            // btnGenerarExcel
+            // 
+            btnGenerarExcel.BackColor = Color.Navy;
+            btnGenerarExcel.Dock = DockStyle.Top;
+            btnGenerarExcel.Font = new Font("Palatino Linotype", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnGenerarExcel.ForeColor = SystemColors.ButtonHighlight;
+            btnGenerarExcel.Location = new Point(0, 66);
+            btnGenerarExcel.Name = "btnGenerarExcel";
+            btnGenerarExcel.Size = new Size(102, 63);
+            btnGenerarExcel.TabIndex = 1;
+            btnGenerarExcel.Text = "Generar Excel";
+            btnGenerarExcel.UseVisualStyleBackColor = false;
+            btnGenerarExcel.Click += btnGenerarExcel_Click;
+            // 
+            // btnCalcularPorc
+            // 
+            btnCalcularPorc.BackColor = Color.Navy;
+            btnCalcularPorc.Dock = DockStyle.Top;
+            btnCalcularPorc.Font = new Font("Palatino Linotype", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnCalcularPorc.ForeColor = SystemColors.ButtonHighlight;
+            btnCalcularPorc.Location = new Point(0, 0);
+            btnCalcularPorc.Name = "btnCalcularPorc";
+            btnCalcularPorc.Size = new Size(102, 66);
+            btnCalcularPorc.TabIndex = 0;
+            btnCalcularPorc.Text = "Calcular Porcentaje";
+            btnCalcularPorc.UseVisualStyleBackColor = false;
+            btnCalcularPorc.Click += button1_Click_1;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(654, 449);
+            BackColor = SystemColors.Control;
+            ClientSize = new Size(827, 449);
+            Controls.Add(panelderecha);
+            Controls.Add(panelizquierda);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
-            Controls.Add(menuStrip1);
-            MainMenuStrip = menuStrip1;
             Name = "Form1";
-            Text = "Form1";
+            Text = "Control De Stock";
             FormClosed += Form1_FormClosed_1;
             Load += Form1_Load;
-            menuStrip1.ResumeLayout(false);
-            menuStrip1.PerformLayout();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
+            panelizquierda.ResumeLayout(false);
+            panelderecha.ResumeLayout(false);
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-
-        private MenuStrip menuStrip1;
-        private ToolStripMenuItem archivoToolStripMenuItem;
-        private ToolStripMenuItem guardarToolStripMenuItem;
-        private ToolStripMenuItem generarExcelToolStripMenuItem;
-        private ToolStripMenuItem verHistorialToolStripMenuItem;
-        private ToolStripMenuItem edicionToolStripMenuItem;
-        private ToolStripMenuItem cargarNuevoProductoToolStripMenuItem;
-        private ToolStripMenuItem eliminarProductoToolStripMenuItem;
-        private ToolStripMenuItem modificarActualizarProductoToolStripMenuItem;
-        private ToolStripMenuItem acercaDeToolStripMenuItem;
         private GroupBox groupBox1;
         private Button btnCancelarVenta;
         private Button btnCargarVenta;
@@ -325,5 +355,13 @@
         private Label label6;
         private ComboBox cbSeleccionProducto1;
         private TextBox tbDetalle;
+        private Panel panelizquierda;
+        private Panel panelderecha;
+        private Button btnCargarNuevo;
+        private Button btnEliminar;
+        private Button btnModificar;
+        private Button btnAcercaDe;
+        private Button btnCalcularPorc;
+        private Button btnGenerarExcel;
     }
 }

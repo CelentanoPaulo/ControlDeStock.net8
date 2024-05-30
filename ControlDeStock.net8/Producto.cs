@@ -55,10 +55,18 @@ namespace ControlDeStock.net8
             this.ganancias += ganancias;
         }
 
-        public void ModificarMismoObjeto(double kginicial)
+        public void ModificarMismoObjeto(double kginicial,string descripcion)
         {
+            this.descripcion = descripcion;
             inicialKg += kginicial;
             stock += kginicial;
+        }
+
+        public void ActualizarProducto(double kginicial, string descripcion)
+        {
+            this.descripcion = descripcion;
+            inicialKg = kginicial;
+            stock = kginicial;
         }
     }
 }
