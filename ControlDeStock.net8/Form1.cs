@@ -23,6 +23,20 @@ namespace ControlDeStock.net8
             leftBorderBtnDerecha.Size = new Size(7, 62);
             panelderecha.Controls.Add(leftBorderBtnDerecha);
 
+
+            btnCargarNuevo.FlatStyle = FlatStyle.Flat;
+            btnCargarNuevo.FlatAppearance.BorderSize = 0;
+            btnEliminar.FlatStyle = FlatStyle.Flat;
+            btnEliminar.FlatAppearance.BorderSize = 0;
+            btnModificar.FlatStyle = FlatStyle.Flat;
+            btnModificar.FlatAppearance.BorderSize = 0;
+            btnCalcularPorc.FlatStyle = FlatStyle.Flat;
+            btnCalcularPorc.FlatAppearance.BorderSize = 0;
+            btnGenerarExcel.FlatStyle = FlatStyle.Flat;
+            btnGenerarExcel.FlatAppearance.BorderSize = 0;
+            btnAcercaDe.FlatStyle = FlatStyle.Flat;
+            btnAcercaDe.FlatAppearance.BorderSize = 0;
+
         }
 
 
@@ -46,37 +60,42 @@ namespace ControlDeStock.net8
 
         public void FormatoMoneda(System.Windows.Forms.TextBox tb)
         {
-            if (tb.Text == string.Empty)
-            {
-                return;
-            }
-            else
-            {
 
-                decimal monto = Convert.ToDecimal(tb.Text);
-                tb.Text = monto.ToString("N2");
+                if (tb.Text == string.Empty)
+                {
+                    return;
+                }
+                else
+                {
 
-            }
+                    decimal monto = Convert.ToDecimal(tb.Text);
+                    tb.Text = monto.ToString("N2");
+
+                }
+            
+            
         }
 
 
 
         private void btnCargarVenta_Click_1(object sender, EventArgs e)
         {
-            decimal ganancias = Convert.ToDecimal(tbIngresarPrecio.Text);
-            string resultado = ganancias.ToString("N");
-            double venta = Convert.ToDouble(tbVentasKg.Text);
-            int indice = cbSeleccionProducto2.SelectedIndex;
-            Producto producto = miSistema.Productos[indice];
-            DialogResult result = MessageBox.Show("Por favor verifique los datos: \nProducto: " + producto.Nombre + "\nMonto en $: " + resultado + "\ny Cantidad Kg: " + venta, "Confirmar Datos", MessageBoxButtons.OKCancel);
+        
+                decimal ganancias = Convert.ToDecimal(tbIngresarPrecio.Text);
+                string resultado = ganancias.ToString("N");
+                double venta = Convert.ToDouble(tbVentasKg.Text);
+                int indice = cbSeleccionProducto2.SelectedIndex;
+                Producto producto = miSistema.Productos[indice];
+                DialogResult result = MessageBox.Show("Por favor verifique los datos: \nProducto: " + producto.Nombre + "\nMonto en $: " + resultado + "\ny Cantidad Kg: " + venta, "Confirmar Datos", MessageBoxButtons.OKCancel);
 
-            if (result == DialogResult.OK)
-            {
-                producto.GenerarVenta(venta);
-                producto.AcumularGanancias(ganancias);
-                tbIngresarPrecio.Clear();
-                tbVentasKg.Clear();
-            }
+                if (result == DialogResult.OK)
+                {
+                    producto.GenerarVenta(venta);
+                    producto.AcumularGanancias(ganancias);
+                    tbIngresarPrecio.Text = "0";
+                    tbVentasKg.Text = "0";
+                }
+            
         }
 
         private void cbSeleccionProducto1_SelectedIndexChanged_1(object sender, EventArgs e)
@@ -90,6 +109,7 @@ namespace ControlDeStock.net8
 
         private void tbIngresarPrecio_TextChanged_1(object sender, EventArgs e)
         {
+            ValidarFormatoTextBoxDecimal(sender, e);
             FormatoMoneda(tbIngresarPrecio);
 
 
@@ -108,6 +128,8 @@ namespace ControlDeStock.net8
 
         private void tbVentasKg_TextChanged_1(object sender, EventArgs e)
         {
+            ValidarFormatoTextBoxDecimal(sender, e);
+
             if (!string.IsNullOrEmpty(tbVentasKg.Text))
             {
 
@@ -122,6 +144,8 @@ namespace ControlDeStock.net8
                 lblMontovendido.Visible = false;
                 tbIngresarPrecio.Visible = false;
             }
+
+
         }
 
         string archivoInicial = Application.StartupPath + "data.json";
@@ -153,18 +177,6 @@ namespace ControlDeStock.net8
         }
 
 
-        //private void generarExcelToolStripMenuItem_Click(object sender, EventArgs e)
-        //{
-        //    SaveFileDialog saveFileDialog = new SaveFileDialog();
-        //    saveFileDialog.Filter = "Archivo de texto|*.txt|Archivo CSV|*.csv";
-        //    saveFileDialog.Title = "Guardar clientes en archivo de texto";
-
-        //    if (saveFileDialog.ShowDialog() == DialogResult.OK)
-        //    {
-        //        string rutaArchivo = saveFileDialog.FileName;
-        //        miSistema.GenerarCSV(miSistema.Productos, rutaArchivo);
-        //    }
-        //}
 
         private void ActivateButton(object senderBtn)
         {
@@ -211,18 +223,15 @@ namespace ControlDeStock.net8
                 currentBtnDerecha.BackColor = Color.FromArgb(36, 44, 79);
                 currentBtnDerecha.ForeColor = Color.White;
                 currentBtnDerecha.TextAlign = ContentAlignment.MiddleLeft;
-                //currentBtn.IconColor = color;
                 currentBtnDerecha.TextImageRelation = TextImageRelation.TextBeforeImage;
                 currentBtnDerecha.ImageAlign = ContentAlignment.MiddleLeft;
 
                 leftBorderBtnDerecha.BackColor = Color.Wheat;
-                leftBorderBtnDerecha.Location = new Point(0, currentBtnDerecha.Location.Y);
+                leftBorderBtnDerecha.Location = new Point(95, currentBtnDerecha.Location.Y);
                 leftBorderBtnDerecha.Visible = true;
                 leftBorderBtnDerecha.BringToFront();
 
-                //Current Child Form Icon
-                //iconCurrentChildForm.IconChar = currentBtn.IconChar;
-                //iconCurrentChildForm.IconColor = color;
+                
             }
         }
         private void DisableButtonDerecha()
@@ -240,6 +249,7 @@ namespace ControlDeStock.net8
 
         private void button1_Click(object sender, EventArgs e)
         {
+           
             ActivateButton(sender);
             Producto miProducto;
             Formcargar modalCargar = new Formcargar();
@@ -300,7 +310,7 @@ namespace ControlDeStock.net8
         private void button1_Click_1(object sender, EventArgs e)
         {
             ActivateButtonDerecha(sender);
-            modalporcentaje modalPorcentaje=new modalporcentaje();
+            modalporcentaje modalPorcentaje = new modalporcentaje();
             modalPorcentaje.ShowDialog();
         }
 
@@ -317,5 +327,57 @@ namespace ControlDeStock.net8
                 miSistema.GenerarCSV(miSistema.Productos, rutaArchivo);
             }
         }
+
+
+
+
+
+        private bool EsDecimalValido(string texto)
+        {
+            return decimal.TryParse(texto, out _);
+        }
+
+        private bool isValidating = false;
+        private void ValidarFormatoTextBoxDecimal(object sender, EventArgs e)
+        {
+            if (isValidating) return;
+            TextBox textBox = sender as TextBox;
+            if (textBox != null)
+            {
+                string texto = textBox.Text.Trim(); // Eliminar espacios en blanco al principio y al final
+
+                if (!string.IsNullOrEmpty(texto) && !EsDecimalValido(texto))
+                {
+                    isValidating = true;
+                    MessageBox.Show("Formato incorrecto,Ingrese numeros por favor, en caso de ser una cifra decimal ingresar el valor separado por " + " ' , ' (coma).", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    textBox.Clear(); // Limpia el TextBox para que el usuario pueda volver a ingresar el valor.
+                    isValidating = false;
+                }
+            }
+        }
+
+        private bool EsStringMinusculaValido(string texto)
+        {
+            // Verifica si el texto está en minúsculas
+            return !string.IsNullOrEmpty(texto) && texto.All(char.IsLetter) && texto == texto.ToLower();
+        }
+        private void ValidarFormatoTextBoxString(object sender, EventArgs e)
+        {
+            if (isValidating) return;
+            TextBox textBox = sender as TextBox;
+            if (textBox != null)
+            {
+                string texto = textBox.Text.Trim();
+                if (!string.IsNullOrEmpty(texto) && !EsStringMinusculaValido(texto))
+                {
+                    isValidating = true;
+                    MessageBox.Show("Formato incorrecto, ingrese un Texto por favor", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    textBox.Clear(); // Limpia el TextBox para que el usuario pueda volver a ingresar el valor.
+                    isValidating = false;
+                }
+            }
+        }
+
+
     }
 }

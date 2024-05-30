@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            tbProducto = new TextBox();
-            tbCantidad = new TextBox();
-            tbDescripcion = new TextBox();
-            btnMcargar = new Button();
             btnMcancelar = new Button();
+            btnMcargar = new Button();
+            tbDescripcion = new TextBox();
+            tbCantidad = new TextBox();
+            tbProducto = new TextBox();
+            label3 = new Label();
+            label2 = new Label();
+            label1 = new Label();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -57,54 +57,15 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Cargar nuevo producto";
             // 
-            // label1
+            // btnMcancelar
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(19, 34);
-            label1.Name = "label1";
-            label1.Size = new Size(69, 20);
-            label1.TabIndex = 0;
-            label1.Text = "Producto";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(19, 103);
-            label2.Name = "label2";
-            label2.Size = new Size(110, 20);
-            label2.TabIndex = 1;
-            label2.Text = "Cantidad de kg";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(19, 184);
-            label3.Name = "label3";
-            label3.Size = new Size(87, 20);
-            label3.TabIndex = 2;
-            label3.Text = "Descripcion";
-            // 
-            // tbProducto
-            // 
-            tbProducto.Location = new Point(19, 57);
-            tbProducto.Name = "tbProducto";
-            tbProducto.Size = new Size(125, 27);
-            tbProducto.TabIndex = 3;
-            // 
-            // tbCantidad
-            // 
-            tbCantidad.Location = new Point(19, 126);
-            tbCantidad.Name = "tbCantidad";
-            tbCantidad.Size = new Size(125, 27);
-            tbCantidad.TabIndex = 4;
-            // 
-            // tbDescripcion
-            // 
-            tbDescripcion.Location = new Point(19, 207);
-            tbDescripcion.Multiline = true;
-            tbDescripcion.Name = "tbDescripcion";
-            tbDescripcion.Size = new Size(282, 129);
-            tbDescripcion.TabIndex = 5;
+            btnMcancelar.DialogResult = DialogResult.Cancel;
+            btnMcancelar.Location = new Point(200, 364);
+            btnMcancelar.Name = "btnMcancelar";
+            btnMcancelar.Size = new Size(101, 47);
+            btnMcancelar.TabIndex = 7;
+            btnMcancelar.Text = "Cancelar";
+            btnMcancelar.UseVisualStyleBackColor = true;
             // 
             // btnMcargar
             // 
@@ -116,15 +77,56 @@
             btnMcargar.Text = "Aceptar";
             btnMcargar.UseVisualStyleBackColor = true;
             // 
-            // btnMcancelar
+            // tbDescripcion
             // 
-            btnMcancelar.DialogResult = DialogResult.Cancel;
-            btnMcancelar.Location = new Point(200, 364);
-            btnMcancelar.Name = "btnMcancelar";
-            btnMcancelar.Size = new Size(101, 47);
-            btnMcancelar.TabIndex = 7;
-            btnMcancelar.Text = "Cancelar";
-            btnMcancelar.UseVisualStyleBackColor = true;
+            tbDescripcion.Location = new Point(19, 207);
+            tbDescripcion.Multiline = true;
+            tbDescripcion.Name = "tbDescripcion";
+            tbDescripcion.Size = new Size(282, 129);
+            tbDescripcion.TabIndex = 5;
+            // 
+            // tbCantidad
+            // 
+            tbCantidad.Location = new Point(19, 126);
+            tbCantidad.Name = "tbCantidad";
+            tbCantidad.Size = new Size(125, 27);
+            tbCantidad.TabIndex = 4;
+            tbCantidad.TextChanged += tbCantidad_TextChanged;
+            // 
+            // tbProducto
+            // 
+            tbProducto.Location = new Point(19, 57);
+            tbProducto.Name = "tbProducto";
+            tbProducto.Size = new Size(125, 27);
+            tbProducto.TabIndex = 3;
+            tbProducto.TextChanged += tbProducto_TextChanged;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(19, 184);
+            label3.Name = "label3";
+            label3.Size = new Size(87, 20);
+            label3.TabIndex = 2;
+            label3.Text = "Descripcion";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(19, 103);
+            label2.Name = "label2";
+            label2.Size = new Size(110, 20);
+            label2.TabIndex = 1;
+            label2.Text = "Cantidad de kg";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(19, 34);
+            label1.Name = "label1";
+            label1.Size = new Size(69, 20);
+            label1.TabIndex = 0;
+            label1.Text = "Producto";
             // 
             // Formcargar
             // 

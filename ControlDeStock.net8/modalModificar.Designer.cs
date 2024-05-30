@@ -73,6 +73,7 @@
             tbKgInicialModif.Name = "tbKgInicialModif";
             tbKgInicialModif.Size = new Size(125, 27);
             tbKgInicialModif.TabIndex = 3;
+            tbKgInicialModif.TextChanged += tbKgInicialModif_TextChanged;
             // 
             // groupBox1
             // 

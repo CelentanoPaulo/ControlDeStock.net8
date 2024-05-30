@@ -186,6 +186,7 @@
             tbDetalle.Location = new Point(6, 121);
             tbDetalle.Multiline = true;
             tbDetalle.Name = "tbDetalle";
+            tbDetalle.ReadOnly = true;
             tbDetalle.Size = new Size(283, 253);
             tbDetalle.TabIndex = 11;
             // 
@@ -226,6 +227,7 @@
             // 
             btnAcercaDe.BackColor = Color.Navy;
             btnAcercaDe.Dock = DockStyle.Bottom;
+            btnAcercaDe.FlatStyle = FlatStyle.Flat;
             btnAcercaDe.Font = new Font("Palatino Linotype", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnAcercaDe.ForeColor = SystemColors.ButtonFace;
             btnAcercaDe.Location = new Point(0, 385);
@@ -239,6 +241,7 @@
             // 
             btnModificar.BackColor = Color.Navy;
             btnModificar.Dock = DockStyle.Top;
+            btnModificar.FlatStyle = FlatStyle.Flat;
             btnModificar.Font = new Font("Palatino Linotype", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnModificar.ForeColor = SystemColors.ButtonFace;
             btnModificar.Location = new Point(0, 129);
@@ -253,6 +256,7 @@
             // 
             btnEliminar.BackColor = Color.Navy;
             btnEliminar.Dock = DockStyle.Top;
+            btnEliminar.FlatStyle = FlatStyle.Flat;
             btnEliminar.Font = new Font("Palatino Linotype", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnEliminar.ForeColor = SystemColors.ButtonFace;
             btnEliminar.Location = new Point(0, 66);
@@ -267,6 +271,7 @@
             // 
             btnCargarNuevo.BackColor = Color.Navy;
             btnCargarNuevo.Dock = DockStyle.Top;
+            btnCargarNuevo.FlatStyle = FlatStyle.Flat;
             btnCargarNuevo.Font = new Font("Palatino Linotype", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnCargarNuevo.ForeColor = SystemColors.ButtonFace;
             btnCargarNuevo.Location = new Point(0, 0);
@@ -292,6 +297,7 @@
             // 
             btnGenerarExcel.BackColor = Color.Navy;
             btnGenerarExcel.Dock = DockStyle.Top;
+            btnGenerarExcel.FlatStyle = FlatStyle.Flat;
             btnGenerarExcel.Font = new Font("Palatino Linotype", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnGenerarExcel.ForeColor = SystemColors.ButtonHighlight;
             btnGenerarExcel.Location = new Point(0, 66);
@@ -306,6 +312,7 @@
             // 
             btnCalcularPorc.BackColor = Color.Navy;
             btnCalcularPorc.Dock = DockStyle.Top;
+            btnCalcularPorc.FlatStyle = FlatStyle.Flat;
             btnCalcularPorc.Font = new Font("Palatino Linotype", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnCalcularPorc.ForeColor = SystemColors.ButtonHighlight;
             btnCalcularPorc.Location = new Point(0, 0);

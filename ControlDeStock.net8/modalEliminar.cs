@@ -17,9 +17,8 @@ namespace ControlDeStock.net8
             InitializeComponent();
         }
 
-        private void cbEliminar_SelectedIndexChanged(object sender, EventArgs e)
-        {
+        
 
-        }
+        
     }
 }

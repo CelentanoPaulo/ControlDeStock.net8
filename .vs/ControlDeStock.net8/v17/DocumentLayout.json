@@ -3,6 +3,34 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\Programitas\\ControlDeStock.net8\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{259890BD-C7EA-4DE7-B41B-53AD32E87585}|ControlDeStock.net8\\ControlDeStock.net8.csproj|C:\\Users\\Admin\\Desktop\\Programitas\\ControlDeStock.net8\\controldestock.net8\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{259890BD-C7EA-4DE7-B41B-53AD32E87585}|ControlDeStock.net8\\ControlDeStock.net8.csproj|solutionrelative:controldestock.net8\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{259890BD-C7EA-4DE7-B41B-53AD32E87585}|ControlDeStock.net8\\ControlDeStock.net8.csproj|C:\\Users\\Admin\\Desktop\\Programitas\\ControlDeStock.net8\\controldestock.net8\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{259890BD-C7EA-4DE7-B41B-53AD32E87585}|ControlDeStock.net8\\ControlDeStock.net8.csproj|solutionrelative:controldestock.net8\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{259890BD-C7EA-4DE7-B41B-53AD32E87585}|ControlDeStock.net8\\ControlDeStock.net8.csproj|C:\\Users\\Admin\\Desktop\\Programitas\\ControlDeStock.net8\\controldestock.net8\\modalmodificar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{259890BD-C7EA-4DE7-B41B-53AD32E87585}|ControlDeStock.net8\\ControlDeStock.net8.csproj|solutionrelative:controldestock.net8\\modalmodificar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{259890BD-C7EA-4DE7-B41B-53AD32E87585}|ControlDeStock.net8\\ControlDeStock.net8.csproj|c:\\users\\admin\\desktop\\programitas\\controldestock.net8\\controldestock.net8\\modalmodificar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{259890BD-C7EA-4DE7-B41B-53AD32E87585}|ControlDeStock.net8\\ControlDeStock.net8.csproj|solutionrelative:controldestock.net8\\modalmodificar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{259890BD-C7EA-4DE7-B41B-53AD32E87585}|ControlDeStock.net8\\ControlDeStock.net8.csproj|c:\\users\\admin\\desktop\\programitas\\controldestock.net8\\controldestock.net8\\modaleliminar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{259890BD-C7EA-4DE7-B41B-53AD32E87585}|ControlDeStock.net8\\ControlDeStock.net8.csproj|solutionrelative:controldestock.net8\\modaleliminar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{259890BD-C7EA-4DE7-B41B-53AD32E87585}|ControlDeStock.net8\\ControlDeStock.net8.csproj|C:\\Users\\Admin\\Desktop\\Programitas\\ControlDeStock.net8\\controldestock.net8\\modaleliminar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{259890BD-C7EA-4DE7-B41B-53AD32E87585}|ControlDeStock.net8\\ControlDeStock.net8.csproj|solutionrelative:controldestock.net8\\modaleliminar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{259890BD-C7EA-4DE7-B41B-53AD32E87585}|ControlDeStock.net8\\ControlDeStock.net8.csproj|c:\\users\\admin\\desktop\\programitas\\controldestock.net8\\controldestock.net8\\formcargar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{259890BD-C7EA-4DE7-B41B-53AD32E87585}|ControlDeStock.net8\\ControlDeStock.net8.csproj|solutionrelative:controldestock.net8\\formcargar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{259890BD-C7EA-4DE7-B41B-53AD32E87585}|ControlDeStock.net8\\ControlDeStock.net8.csproj|c:\\users\\admin\\desktop\\programitas\\controldestock.net8\\controldestock.net8\\modalporcentaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{259890BD-C7EA-4DE7-B41B-53AD32E87585}|ControlDeStock.net8\\ControlDeStock.net8.csproj|solutionrelative:controldestock.net8\\modalporcentaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,32 +39,16 @@
       "RelativeMoniker": "D:0:0:{259890BD-C7EA-4DE7-B41B-53AD32E87585}|ControlDeStock.net8\\ControlDeStock.net8.csproj|solutionrelative:controldestock.net8\\modalporcentaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{259890BD-C7EA-4DE7-B41B-53AD32E87585}|ControlDeStock.net8\\ControlDeStock.net8.csproj|C:\\Users\\Admin\\Desktop\\Programitas\\ControlDeStock.net8\\controldestock.net8\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{259890BD-C7EA-4DE7-B41B-53AD32E87585}|ControlDeStock.net8\\ControlDeStock.net8.csproj|solutionrelative:controldestock.net8\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{259890BD-C7EA-4DE7-B41B-53AD32E87585}|ControlDeStock.net8\\ControlDeStock.net8.csproj|C:\\Users\\Admin\\Desktop\\Programitas\\ControlDeStock.net8\\controldestock.net8\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{259890BD-C7EA-4DE7-B41B-53AD32E87585}|ControlDeStock.net8\\ControlDeStock.net8.csproj|solutionrelative:controldestock.net8\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{259890BD-C7EA-4DE7-B41B-53AD32E87585}|ControlDeStock.net8\\ControlDeStock.net8.csproj|C:\\Users\\Admin\\Desktop\\Programitas\\ControlDeStock.net8\\controldestock.net8\\modalmodificar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{259890BD-C7EA-4DE7-B41B-53AD32E87585}|ControlDeStock.net8\\ControlDeStock.net8.csproj|solutionrelative:controldestock.net8\\modalmodificar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{259890BD-C7EA-4DE7-B41B-53AD32E87585}|ControlDeStock.net8\\ControlDeStock.net8.csproj|C:\\Users\\Admin\\Desktop\\Programitas\\ControlDeStock.net8\\controldestock.net8\\modaleliminar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{259890BD-C7EA-4DE7-B41B-53AD32E87585}|ControlDeStock.net8\\ControlDeStock.net8.csproj|solutionrelative:controldestock.net8\\modaleliminar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{259890BD-C7EA-4DE7-B41B-53AD32E87585}|ControlDeStock.net8\\ControlDeStock.net8.csproj|C:\\Users\\Admin\\Desktop\\Programitas\\ControlDeStock.net8\\controldestock.net8\\formcargar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{259890BD-C7EA-4DE7-B41B-53AD32E87585}|ControlDeStock.net8\\ControlDeStock.net8.csproj|solutionrelative:controldestock.net8\\formcargar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{259890BD-C7EA-4DE7-B41B-53AD32E87585}|ControlDeStock.net8\\ControlDeStock.net8.csproj|C:\\Users\\Admin\\Desktop\\Programitas\\ControlDeStock.net8\\controldestock.net8\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{259890BD-C7EA-4DE7-B41B-53AD32E87585}|ControlDeStock.net8\\ControlDeStock.net8.csproj|solutionrelative:controldestock.net8\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{259890BD-C7EA-4DE7-B41B-53AD32E87585}|ControlDeStock.net8\\ControlDeStock.net8.csproj|C:\\Users\\Admin\\Desktop\\Programitas\\ControlDeStock.net8\\controldestock.net8\\sistema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{259890BD-C7EA-4DE7-B41B-53AD32E87585}|ControlDeStock.net8\\ControlDeStock.net8.csproj|solutionrelative:controldestock.net8\\sistema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{259890BD-C7EA-4DE7-B41B-53AD32E87585}|ControlDeStock.net8\\ControlDeStock.net8.csproj|C:\\Users\\Admin\\Desktop\\Programitas\\ControlDeStock.net8\\controldestock.net8\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{259890BD-C7EA-4DE7-B41B-53AD32E87585}|ControlDeStock.net8\\ControlDeStock.net8.csproj|solutionrelative:controldestock.net8\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{259890BD-C7EA-4DE7-B41B-53AD32E87585}|ControlDeStock.net8\\ControlDeStock.net8.csproj|C:\\Users\\Admin\\Desktop\\Programitas\\ControlDeStock.net8\\controldestock.net8\\formcargar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{259890BD-C7EA-4DE7-B41B-53AD32E87585}|ControlDeStock.net8\\ControlDeStock.net8.csproj|solutionrelative:controldestock.net8\\formcargar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,49 +66,91 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "modalEliminar.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Programitas\\ControlDeStock.net8\\ControlDeStock.net8\\modalEliminar.cs",
+              "RelativeDocumentMoniker": "ControlDeStock.net8\\modalEliminar.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Programitas\\ControlDeStock.net8\\ControlDeStock.net8\\modalEliminar.cs",
+              "RelativeToolTip": "ControlDeStock.net8\\modalEliminar.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAjwBMAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T23:14:29.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "modalModificar.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Programitas\\ControlDeStock.net8\\ControlDeStock.net8\\modalModificar.cs",
+              "RelativeDocumentMoniker": "ControlDeStock.net8\\modalModificar.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Programitas\\ControlDeStock.net8\\ControlDeStock.net8\\modalModificar.cs",
+              "RelativeToolTip": "ControlDeStock.net8\\modalModificar.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAYwCMAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T22:45:52.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Formcargar.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Programitas\\ControlDeStock.net8\\ControlDeStock.net8\\Formcargar.cs",
+              "RelativeDocumentMoniker": "ControlDeStock.net8\\Formcargar.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Programitas\\ControlDeStock.net8\\ControlDeStock.net8\\Formcargar.cs",
+              "RelativeToolTip": "ControlDeStock.net8\\Formcargar.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAgwC8AAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T22:34:04.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "modalporcentaje.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Programitas\\ControlDeStock.net8\\ControlDeStock.net8\\modalporcentaje.cs",
               "RelativeDocumentMoniker": "ControlDeStock.net8\\modalporcentaje.cs",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\Programitas\\ControlDeStock.net8\\ControlDeStock.net8\\modalporcentaje.cs",
               "RelativeToolTip": "ControlDeStock.net8\\modalporcentaje.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAIwBkAAAA0AAAA",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAAwDUAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T00:24:58.223Z",
+              "WhenOpened": "2024-05-30T22:25:45.06Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "modalporcentaje.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Programitas\\ControlDeStock.net8\\ControlDeStock.net8\\modalporcentaje.cs",
               "RelativeDocumentMoniker": "ControlDeStock.net8\\modalporcentaje.cs",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\Programitas\\ControlDeStock.net8\\ControlDeStock.net8\\modalporcentaje.cs [Dise\u00F1o]",
               "RelativeToolTip": "ControlDeStock.net8\\modalporcentaje.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T00:13:54.576Z"
+              "WhenOpened": "2024-05-30T00:13:54.576Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Programitas\\ControlDeStock.net8\\ControlDeStock.net8\\Form1.cs",
               "RelativeDocumentMoniker": "ControlDeStock.net8\\Form1.cs",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\Programitas\\ControlDeStock.net8\\ControlDeStock.net8\\Form1.cs [Dise\u00F1o]",
               "RelativeToolTip": "ControlDeStock.net8\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T23:29:41.268Z"
+              "WhenOpened": "2024-05-29T23:29:41.268Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "modalModificar.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Programitas\\ControlDeStock.net8\\ControlDeStock.net8\\modalModificar.cs",
               "RelativeDocumentMoniker": "ControlDeStock.net8\\modalModificar.cs",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\Programitas\\ControlDeStock.net8\\ControlDeStock.net8\\modalModificar.cs [Dise\u00F1o]",
               "RelativeToolTip": "ControlDeStock.net8\\modalModificar.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T17:51:06.776Z"
+              "WhenOpened": "2024-05-19T17:51:06.776Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
@@ -107,54 +161,59 @@
               "ToolTip": "C:\\Users\\Admin\\Desktop\\Programitas\\ControlDeStock.net8\\ControlDeStock.net8\\modalEliminar.cs [Dise\u00F1o]",
               "RelativeToolTip": "ControlDeStock.net8\\modalEliminar.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T17:14:09.352Z"
+              "WhenOpened": "2024-05-19T17:14:09.352Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Programitas\\ControlDeStock.net8\\ControlDeStock.net8\\Form1.cs",
               "RelativeDocumentMoniker": "ControlDeStock.net8\\Form1.cs",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\Programitas\\ControlDeStock.net8\\ControlDeStock.net8\\Form1.cs",
               "RelativeToolTip": "ControlDeStock.net8\\Form1.cs",
-              "ViewState": "AQIAAP4AAAAAAAAAAAAnwC8BAAApAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAcwNgAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T22:29:56.035Z"
+              "WhenOpened": "2024-05-18T22:29:56.035Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "Formcargar.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Programitas\\ControlDeStock.net8\\ControlDeStock.net8\\Formcargar.cs",
               "RelativeDocumentMoniker": "ControlDeStock.net8\\Formcargar.cs",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\Programitas\\ControlDeStock.net8\\ControlDeStock.net8\\Formcargar.cs [Dise\u00F1o]",
               "RelativeToolTip": "ControlDeStock.net8\\Formcargar.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T21:11:05.972Z"
+              "WhenOpened": "2024-05-18T21:11:05.972Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "Sistema.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Programitas\\ControlDeStock.net8\\ControlDeStock.net8\\Sistema.cs",
               "RelativeDocumentMoniker": "ControlDeStock.net8\\Sistema.cs",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\Programitas\\ControlDeStock.net8\\ControlDeStock.net8\\Sistema.cs",
               "RelativeToolTip": "ControlDeStock.net8\\Sistema.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAowEMAAAAAAAAA",
+              "ViewState": "AQIAACgAAAAAAAAAAAAYwEMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T20:27:27.928Z"
+              "WhenOpened": "2024-05-18T20:27:27.928Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Producto.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Programitas\\ControlDeStock.net8\\ControlDeStock.net8\\Producto.cs",
               "RelativeDocumentMoniker": "ControlDeStock.net8\\Producto.cs",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\Programitas\\ControlDeStock.net8\\ControlDeStock.net8\\Producto.cs",
               "RelativeToolTip": "ControlDeStock.net8\\Producto.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAQwEAAAABMAAAA",
+              "ViewState": "AQIAABEAAAAAAAAAAAAzwEAAAABMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T20:26:15.15Z"
+              "WhenOpened": "2024-05-18T20:26:15.15Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -64,6 +64,7 @@
             tbValorProducto.Name = "tbValorProducto";
             tbValorProducto.Size = new Size(153, 27);
             tbValorProducto.TabIndex = 2;
+            tbValorProducto.TextChanged += tbValorProducto_TextChanged;
             // 
             // tbPorcentaje
             // 
@@ -71,6 +72,7 @@
             tbPorcentaje.Name = "tbPorcentaje";
             tbPorcentaje.Size = new Size(153, 27);
             tbPorcentaje.TabIndex = 3;
+            tbPorcentaje.TextChanged += tbPorcentaje_TextChanged;
             // 
             // label2
             // 
@@ -84,7 +86,9 @@
             // tbResultado
             // 
             tbResultado.Location = new Point(151, 218);
+            tbResultado.Multiline = true;
             tbResultado.Name = "tbResultado";
+            tbResultado.ReadOnly = true;
             tbResultado.Size = new Size(153, 27);
             tbResultado.TabIndex = 5;
             // 

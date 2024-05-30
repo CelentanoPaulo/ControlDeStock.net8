@@ -40,7 +40,7 @@
             cbEliminar.Name = "cbEliminar";
             cbEliminar.Size = new Size(284, 28);
             cbEliminar.TabIndex = 0;
-            cbEliminar.SelectedIndexChanged += cbEliminar_SelectedIndexChanged;
+            
             // 
             // btnEliminar
             // 
@@ -72,6 +72,7 @@
             Controls.Add(cbEliminar);
             Name = "modalEliminar";
             Text = "modalEliminar";
+            
             ResumeLayout(false);
         }
 
