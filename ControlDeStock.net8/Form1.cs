@@ -16,11 +16,11 @@ namespace ControlDeStock.net8
         {
             InitializeComponent();
             leftBorderBtn = new Panel();
-            leftBorderBtn.Size = new Size(7, 62);
+            leftBorderBtn.Size = new Size(7, 60);
             panelizquierda.Controls.Add(leftBorderBtn);
 
             leftBorderBtnDerecha = new Panel();
-            leftBorderBtnDerecha.Size = new Size(7, 62);
+            leftBorderBtnDerecha.Size = new Size(7, 60);
             panelderecha.Controls.Add(leftBorderBtnDerecha);
 
 
@@ -61,26 +61,32 @@ namespace ControlDeStock.net8
         public void FormatoMoneda(System.Windows.Forms.TextBox tb)
         {
 
-                if (tb.Text == string.Empty)
-                {
-                    return;
-                }
-                else
-                {
+            if (tb.Text == string.Empty)
+            {
+                return;
+            }
+            else
+            {
 
-                    decimal monto = Convert.ToDecimal(tb.Text);
-                    tb.Text = monto.ToString("N2");
+                decimal monto = Convert.ToDecimal(tb.Text);
+                tb.Text = monto.ToString("N2");
 
-                }
-            
-            
+            }
+
+
         }
 
 
 
         private void btnCargarVenta_Click_1(object sender, EventArgs e)
         {
-        
+
+            if (string.IsNullOrWhiteSpace(tbVentasKg.Text) || string.IsNullOrWhiteSpace(tbIngresarPrecio.Text) || cbSeleccionProducto2.SelectedIndex == -1)
+            {
+                MessageBox.Show("Debe completar todos los campos y seleccionar un producto.", "Error de Validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
                 decimal ganancias = Convert.ToDecimal(tbIngresarPrecio.Text);
                 string resultado = ganancias.ToString("N");
                 double venta = Convert.ToDouble(tbVentasKg.Text);
@@ -95,7 +101,7 @@ namespace ControlDeStock.net8
                     tbIngresarPrecio.Text = "0";
                     tbVentasKg.Text = "0";
                 }
-            
+            }
         }
 
         private void cbSeleccionProducto1_SelectedIndexChanged_1(object sender, EventArgs e)
@@ -136,6 +142,7 @@ namespace ControlDeStock.net8
                 lblkg.Visible = true;
                 lblMontovendido.Visible = true;
                 tbIngresarPrecio.Visible = true;
+                
             }
             else
             {
@@ -143,6 +150,8 @@ namespace ControlDeStock.net8
                 lblkg.Visible = false;
                 lblMontovendido.Visible = false;
                 tbIngresarPrecio.Visible = false;
+                labeloculto1.Visible=false;
+                cbSeleccionProducto2.Visible = false;
             }
 
 
@@ -227,11 +236,11 @@ namespace ControlDeStock.net8
                 currentBtnDerecha.ImageAlign = ContentAlignment.MiddleLeft;
 
                 leftBorderBtnDerecha.BackColor = Color.Wheat;
-                leftBorderBtnDerecha.Location = new Point(95, currentBtnDerecha.Location.Y);
+                leftBorderBtnDerecha.Location = new Point(100, currentBtnDerecha.Location.Y);
                 leftBorderBtnDerecha.Visible = true;
                 leftBorderBtnDerecha.BringToFront();
 
-                
+
             }
         }
         private void DisableButtonDerecha()
@@ -249,21 +258,28 @@ namespace ControlDeStock.net8
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
+
             ActivateButton(sender);
             Producto miProducto;
             Formcargar modalCargar = new Formcargar();
 
+
             if (modalCargar.ShowDialog() == DialogResult.Yes)
             {
-                string nombre = modalCargar.tbProducto.Text;
-                double kg = Convert.ToDouble(modalCargar.tbCantidad.Text);
-                string descripcion = modalCargar.tbDescripcion.Text;
-                DateTime fecha = DateTime.Now;
-                miProducto = new Producto(fecha, nombre, descripcion, kg);
+                if (string.IsNullOrWhiteSpace(modalCargar.tbProducto.Text) || string.IsNullOrWhiteSpace(modalCargar.tbCantidad.Text) || string.IsNullOrWhiteSpace(modalCargar.tbDescripcion.Text))
+                {
+                    MessageBox.Show("Debe completar todos los campos.", "Error de Validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    string nombre = modalCargar.tbProducto.Text;
+                    double kg = Convert.ToDouble(modalCargar.tbCantidad.Text);
+                    string descripcion = modalCargar.tbDescripcion.Text;
+                    DateTime fecha = DateTime.Now;
+                    miProducto = new Producto(fecha, nombre, descripcion, kg);
 
-                miSistema.AgregarProducto(miProducto, kg, descripcion);
-
+                    miSistema.AgregarProducto(miProducto, kg, descripcion);
+                }
             }
             Actualizarformulario();
         }
@@ -275,16 +291,23 @@ namespace ControlDeStock.net8
             Producto producto;
             double kginicial = 0;
             string descripcion = "";
-            //miModalModificar=new modalModificar();
+
             if (miModalModificar.ShowDialog() == DialogResult.OK)
             {
-                indice = miModalModificar.cbModificar.SelectedIndex;
-                producto = miSistema.Productos[indice];
-                kginicial = Convert.ToDouble(miModalModificar.tbKgInicialModif.Text);
-                descripcion = miModalModificar.tbDescripModif.Text;
-                DialogResult result = MessageBox.Show("Esta seguro que desea modificar el producto " + producto.Nombre + "?" + "\nKg Inicial: " + kginicial + "\nDescripcion: " + descripcion, "Confirmar Datos", MessageBoxButtons.OKCancel);
+                if (string.IsNullOrWhiteSpace(miModalModificar.tbDescripModif.Text) || string.IsNullOrWhiteSpace(miModalModificar.tbKgInicialModif.Text) || miModalModificar.cbModificar.SelectedIndex == -1)
+                {
+                    MessageBox.Show("Debe completar todos los campos.", "Error de Validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    indice = miModalModificar.cbModificar.SelectedIndex;
+                    producto = miSistema.Productos[indice];
+                    kginicial = Convert.ToDouble(miModalModificar.tbKgInicialModif.Text);
+                    descripcion = miModalModificar.tbDescripModif.Text;
+                    DialogResult result = MessageBox.Show("Esta seguro que desea modificar el producto " + producto.Nombre + "?" + "\nKg Inicial: " + kginicial + "\nDescripcion: " + descripcion, "Confirmar Datos", MessageBoxButtons.OKCancel);
 
-                miSistema.ModificarProducto(producto, kginicial, descripcion);
+                    miSistema.ModificarProducto(producto, kginicial, descripcion);
+                }
             }
         }
 
@@ -295,15 +318,21 @@ namespace ControlDeStock.net8
 
             if (miModalEliminar.ShowDialog() == DialogResult.OK)
             {
-                indice = miModalEliminar.cbEliminar.SelectedIndex;
-                Producto producto = miSistema.Productos[indice];
-                DialogResult result = MessageBox.Show("Esta seguro que desea eliminar el producto " + producto.Nombre + "?", "Confirmar Datos", MessageBoxButtons.OKCancel);
-                if (result == DialogResult.OK)
+                if (miModalEliminar.cbEliminar.SelectedIndex == -1)
                 {
-                    miSistema.EliminarProducto(indice);
-                    Actualizarformulario();
+                    MessageBox.Show("Debe seleccionar un producto.", "Error de Validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-
+                else
+                {
+                    indice = miModalEliminar.cbEliminar.SelectedIndex;
+                    Producto producto = miSistema.Productos[indice];
+                    DialogResult result = MessageBox.Show("Esta seguro que desea eliminar el producto " + producto.Nombre + "?", "Confirmar Datos", MessageBoxButtons.OKCancel);
+                    if (result == DialogResult.OK)
+                    {
+                        miSistema.EliminarProducto(indice);
+                        Actualizarformulario();
+                    }
+                }
             }
         }
 
@@ -378,6 +407,9 @@ namespace ControlDeStock.net8
             }
         }
 
+        private void cbSeleccionProducto2_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
+        }
     }
 }

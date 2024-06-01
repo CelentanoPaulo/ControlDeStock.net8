@@ -17,8 +17,9 @@ namespace ControlDeStock.net8
             InitializeComponent();
         }
 
-        
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
 
-        
+        }
     }
 }

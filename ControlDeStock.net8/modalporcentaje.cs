@@ -20,11 +20,18 @@ namespace ControlDeStock.net8
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
-            double valor1 = Convert.ToDouble(tbValorProducto.Text);
-            double valor2 = Convert.ToDouble(tbPorcentaje.Text);
-            double ganancia = valor1 * (valor2 / 100);
-            double resultado = valor1 + ganancia;
-            tbResultado.Text = resultado.ToString();
+            if (string.IsNullOrWhiteSpace(tbValorProducto.Text) || string.IsNullOrWhiteSpace(tbPorcentaje.Text))
+            {
+                MessageBox.Show("Debe completar todos los campos.", "Error de Validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                double valor1 = Convert.ToDouble(tbValorProducto.Text);
+                double valor2 = Convert.ToDouble(tbPorcentaje.Text);
+                double ganancia = valor1 * (valor2 / 100);
+                double resultado = valor1 + ganancia;
+                tbResultado.Text = resultado.ToString();
+            }
         }
 
         private void tbValorProducto_TextChanged(object sender, EventArgs e)

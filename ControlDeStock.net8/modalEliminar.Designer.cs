@@ -36,43 +36,54 @@
             // cbEliminar
             // 
             cbEliminar.FormattingEnabled = true;
-            cbEliminar.Location = new Point(12, 58);
+            cbEliminar.Location = new Point(14, 52);
             cbEliminar.Name = "cbEliminar";
-            cbEliminar.Size = new Size(284, 28);
+            cbEliminar.Size = new Size(319, 26);
             cbEliminar.TabIndex = 0;
-            
             // 
             // btnEliminar
             // 
+            btnEliminar.BackColor = Color.RoyalBlue;
             btnEliminar.DialogResult = DialogResult.OK;
-            btnEliminar.Location = new Point(12, 201);
+            btnEliminar.FlatAppearance.BorderSize = 0;
+            btnEliminar.FlatStyle = FlatStyle.Flat;
+            btnEliminar.ForeColor = Color.White;
+            btnEliminar.Location = new Point(14, 181);
             btnEliminar.Name = "btnEliminar";
-            btnEliminar.Size = new Size(115, 44);
+            btnEliminar.Size = new Size(129, 40);
             btnEliminar.TabIndex = 1;
             btnEliminar.Text = "Eliminar";
-            btnEliminar.UseVisualStyleBackColor = true;
+            btnEliminar.UseVisualStyleBackColor = false;
+            btnEliminar.Click += btnEliminar_Click;
             // 
             // btnNoeliminar
             // 
+            btnNoeliminar.BackColor = Color.RoyalBlue;
             btnNoeliminar.DialogResult = DialogResult.Cancel;
-            btnNoeliminar.Location = new Point(181, 201);
+            btnNoeliminar.FlatAppearance.BorderSize = 0;
+            btnNoeliminar.FlatStyle = FlatStyle.Flat;
+            btnNoeliminar.ForeColor = Color.White;
+            btnNoeliminar.Location = new Point(204, 181);
             btnNoeliminar.Name = "btnNoeliminar";
-            btnNoeliminar.Size = new Size(115, 44);
+            btnNoeliminar.Size = new Size(129, 40);
             btnNoeliminar.TabIndex = 3;
             btnNoeliminar.Text = "Deshacer";
-            btnNoeliminar.UseVisualStyleBackColor = true;
+            btnNoeliminar.UseVisualStyleBackColor = false;
             // 
             // modalEliminar
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(9F, 18F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(314, 267);
+            BackColor = SystemColors.GradientInactiveCaption;
+            ClientSize = new Size(353, 240);
             Controls.Add(btnNoeliminar);
             Controls.Add(btnEliminar);
             Controls.Add(cbEliminar);
+            Font = new Font("Verdana", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            MinimizeBox = false;
             Name = "modalEliminar";
-            Text = "modalEliminar";
-            
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Eliminar producto";
             ResumeLayout(false);
         }
 
