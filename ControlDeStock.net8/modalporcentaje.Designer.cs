@@ -60,7 +60,7 @@
             label1.Name = "label1";
             label1.Size = new Size(143, 18);
             label1.TabIndex = 1;
-            label1.Text = "valor del producto";
+            label1.Text = "Valor del producto";
             // 
             // tbValorProducto
             // 
@@ -149,7 +149,7 @@
             Controls.Add(label1);
             Controls.Add(btnCalcular);
             Font = new Font("Verdana", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            MinimizeBox = false;
+            MaximizeBox = false;
             Name = "modalporcentaje";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Calcular porcentaje de venta";

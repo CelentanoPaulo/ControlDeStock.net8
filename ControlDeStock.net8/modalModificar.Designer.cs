@@ -156,7 +156,7 @@
             ClientSize = new Size(438, 407);
             Controls.Add(groupBox1);
             Font = new Font("Verdana", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            MinimizeBox = false;
+            MaximizeBox = false;
             Name = "modalModificar";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Modificar producto";

@@ -23,3 +23,4 @@ C:\Users\Admin\Desktop\Programitas\ControlDeStock.net8\ControlDeStock.net8\obj\D
 C:\Users\Admin\Desktop\Programitas\ControlDeStock.net8\ControlDeStock.net8\obj\Debug\net8.0-windows\ControlDeStock.net8.modalModificar.resources
 C:\Users\Admin\Desktop\Programitas\ControlDeStock.net8\ControlDeStock.net8\obj\Debug\net8.0-windows\ControlDeStock.net8.Properties.Resources.resources
 C:\Users\Admin\Desktop\Programitas\ControlDeStock.net8\ControlDeStock.net8\obj\Debug\net8.0-windows\ControlDeStock.net8.modalporcentaje.resources
+C:\Users\Admin\Desktop\Programitas\ControlDeStock.net8\ControlDeStock.net8\obj\Debug\net8.0-windows\ControlDeStock.net8.modalAcercaDe.resources

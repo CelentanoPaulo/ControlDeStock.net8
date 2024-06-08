@@ -142,7 +142,7 @@ namespace ControlDeStock.net8
                 lblkg.Visible = true;
                 lblMontovendido.Visible = true;
                 tbIngresarPrecio.Visible = true;
-                
+
             }
             else
             {
@@ -150,7 +150,7 @@ namespace ControlDeStock.net8
                 lblkg.Visible = false;
                 lblMontovendido.Visible = false;
                 tbIngresarPrecio.Visible = false;
-                labeloculto1.Visible=false;
+                labeloculto1.Visible = false;
                 cbSeleccionProducto2.Visible = false;
             }
 
@@ -347,8 +347,9 @@ namespace ControlDeStock.net8
         {
             ActivateButtonDerecha(sender);
             SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.Filter = "Archivo de texto|*.txt|Archivo CSV|*.csv";
-            saveFileDialog.Title = "Guardar clientes en archivo de texto";
+            saveFileDialog.Filter = "Archivo CSV|*.csv";
+            saveFileDialog.Title = "Historial de Ventas";
+            saveFileDialog.FileName = "HistorialDeVentas.csv";
 
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
@@ -410,6 +411,12 @@ namespace ControlDeStock.net8
         private void cbSeleccionProducto2_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnAcercaDe_Click(object sender, EventArgs e)
+        {
+            modalAcercaDe miModal= new modalAcercaDe();
+            miModal.ShowDialog();
         }
     }
 }

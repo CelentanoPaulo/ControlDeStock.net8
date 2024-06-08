@@ -80,7 +80,7 @@
             Controls.Add(btnEliminar);
             Controls.Add(cbEliminar);
             Font = new Font("Verdana", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            MinimizeBox = false;
+            MaximizeBox = false;
             Name = "modalEliminar";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Eliminar producto";

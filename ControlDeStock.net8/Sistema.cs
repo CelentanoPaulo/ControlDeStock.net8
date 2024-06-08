@@ -22,7 +22,7 @@ namespace ControlDeStock.net8
                 if (p.Nombre == productoadd.Nombre)
                 {
                     existe = true;
-                    p.Kg += productoadd.Kg;
+                    p.VentasKg += productoadd.VentasKg;
                     p.ModificarMismoObjeto(kgini,descripcion);
                     break;
 
@@ -53,11 +53,11 @@ namespace ControlDeStock.net8
             FileStream fs = new FileStream(rutaArchivo, FileMode.Create, FileAccess.Write);
             StreamWriter sw = new StreamWriter(fs);
 
-            sw.WriteLine($"Fecha y Hora;Producto;Stock en kg;Recaudacion");
+            sw.WriteLine($"Fecha y Hora;Producto;Stock inicial en kg; Stock actual ;Recaudacion");
 
             foreach (Producto product in producto)
             {
-                sw.WriteLine($"{product.Fecha};{product.Nombre};{product.Stock};{product.Ganancias}");
+                sw.WriteLine($"{product.Fecha};{product.Nombre};{product.Stock};{product.VentasKg};{product.Ganancias}");
             }
 
             sw.Close();

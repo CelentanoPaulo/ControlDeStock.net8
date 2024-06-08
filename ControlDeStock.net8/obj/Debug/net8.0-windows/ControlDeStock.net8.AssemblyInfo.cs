@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ControlDeStock.net8")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+502841ab1f549c41b929af56d33ca44b861354a2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+879d1eb084028844c6e24b97491aeedd2a418cac")]
 [assembly: System.Reflection.AssemblyProductAttribute("ControlDeStock.net8")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ControlDeStock.net8")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

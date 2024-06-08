@@ -11,13 +11,13 @@ namespace ControlDeStock.net8
         private DateTime fecha;
         private string nombre;
         private double inicialkg;
-        private double ventaskg = 0;
+        private double ventaskg ;
         private string descripcion;
-        private decimal ganancias = 0;
+        private decimal ganancias ;
         private double stock;
         public string Nombre { get { return nombre; } set { nombre = value; } }
         public double inicialKg { get { return inicialkg; } set { inicialkg = value; } }
-        public double Kg { get { return ventaskg; } set { ventaskg = value; } }
+        public double VentasKg { get { return ventaskg; } set { ventaskg = value; } }
         public decimal Ganancias { get { return ganancias; } set { ganancias = value; } }
         public double Stock { get { return stock; } set { stock = value; } }
         public string Descripcion { get { return descripcion; } set { descripcion = value; } }
@@ -33,18 +33,22 @@ namespace ControlDeStock.net8
             inicialkg = kg;
             stock = kg;
             this.descripcion = descripcion;
+            ventaskg = 0;
         }
 
         public void GenerarVenta(double kilos)
         {
-            ventaskg += kilos;
-            stock -= kilos;
+            VentasKg += kilos;
+            Stock -= kilos;
         }
 
         public string ReturnDetalle()
         {
+            // muestra las ganancias con separador de miles.
+            string stockFormateado = stock.ToString("F2"); // redondea y muestra 'stock' con 2 decimales.
+            string ventasKgFormateado = ventaskg.ToString("F2"); // redondea y muestra 'ventaskg' con 2 decimales. 
             string resultado = ganancias.ToString("N"); //muestra las gananacias con separador de miles.
-            return "Fecha de carga: " + fecha + Environment.NewLine + "Producto: " + nombre + Environment.NewLine + "Stock Inicial: " + inicialKg + " kg" + Environment.NewLine + "Cantidad en Stock: " + stock + " kg" + Environment.NewLine +
+            return "Fecha de carga: " + fecha + Environment.NewLine + "Producto: " + nombre + Environment.NewLine + "Stock Inicial: " + inicialKg + " kg" + Environment.NewLine + "Cantidad en Stock: " + stockFormateado + " kg" + Environment.NewLine +
             "Cantidad vendida: " + ventaskg + " kg." + Environment.NewLine + "Monto Vendido: $" + resultado + Environment.NewLine +
             "Descripcion: " + descripcion;
 

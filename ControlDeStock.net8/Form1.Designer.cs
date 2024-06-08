@@ -250,6 +250,7 @@
             btnAcercaDe.TabIndex = 3;
             btnAcercaDe.Text = "Acerca de";
             btnAcercaDe.UseVisualStyleBackColor = false;
+            btnAcercaDe.Click += btnAcercaDe_Click;
             // 
             // btnModificar
             // 

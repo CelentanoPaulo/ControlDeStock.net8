@@ -149,7 +149,7 @@
             Controls.Add(groupBox1);
             Font = new Font("Verdana", 9F);
             ForeColor = Color.White;
-            MinimizeBox = false;
+            MaximizeBox = false;
             Name = "Formcargar";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Cargar nuevo producto";

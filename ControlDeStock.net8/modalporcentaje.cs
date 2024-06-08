@@ -30,7 +30,7 @@ namespace ControlDeStock.net8
                 double valor2 = Convert.ToDouble(tbPorcentaje.Text);
                 double ganancia = valor1 * (valor2 / 100);
                 double resultado = valor1 + ganancia;
-                tbResultado.Text = resultado.ToString();
+                tbResultado.Text = "$" + resultado.ToString();
             }
         }
 

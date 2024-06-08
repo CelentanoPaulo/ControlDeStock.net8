@@ -19,7 +19,7 @@ namespace ControlDeStock.net8
         private bool isValidating = false;
         private bool EsStringMinusculaValido(string texto)
         {
-            return !string.IsNullOrEmpty(texto) && texto.All(char.IsLetter) && texto == texto.ToLower();
+            return !string.IsNullOrEmpty(texto) && texto.All(c => char.IsLetter(c) || char.IsWhiteSpace(c)) && texto == texto.ToLower();
         }
         private void ValidarFormatoTextBoxString(object sender, EventArgs e)
         {
