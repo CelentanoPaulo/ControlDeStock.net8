@@ -23,3 +23,7 @@ Un sistema de control de stock donde el usuario debera ingresar **A MANO** todos
 El siguiente boton nos permite **Cargar** un nuevo producto ingresando Nombre del producto, Cantidad en kg y una descripcion del producto.
 
 
+![{248E6850-09C7-4E7B-A3DE-AA8248B3CD35}](https://github.com/user-attachments/assets/8b2911c7-16e4-4f18-8822-bbd3a804add2)
+
+
+Este boton nos permite seleccionar un producto **YA CARGADO** y eliminarlo.
