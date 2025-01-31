@@ -27,3 +27,7 @@ El siguiente boton nos permite **Cargar** un nuevo producto ingresando Nombre de
 
 
 Este boton nos permite seleccionar un producto **YA CARGADO** y eliminarlo.
+
+![{181852F4-64C1-4BC8-954F-FDAB8E3EE852}](https://github.com/user-attachments/assets/8b8495d9-0156-489b-bab7-60e7ba47ba80)
+
+El siguiente boton nos permite seleccionar un producto ya cargado y **MODIFICARLO**.
