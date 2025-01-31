@@ -15,7 +15,8 @@ Un sistema de control de stock donde el usuario debera ingresar **A MANO** todos
 
 
 
-![{48F2CB33-0E7D-4FA3-8A36-DF25A87C6E4D}](https://github.com/user-attachments/assets/e1495531-ce2c-4b45-8220-43da9f2e42e3)
+![{EEDDFCD3-2DAA-4A69-918D-E24CAA938217}](https://github.com/user-attachments/assets/5959a7aa-758b-45c5-909c-bc4873a1da28)
+
 
 
 
