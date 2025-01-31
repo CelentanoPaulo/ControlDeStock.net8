@@ -57,9 +57,10 @@ a continuacion vemos como **CARGAR UNA VENTA**, donde se ingresa la cantidad de 
 ![{90A5F810-3A40-4CC5-809E-DC0C1FD9D3AD}](https://github.com/user-attachments/assets/e879a400-6af4-411a-9bfd-a71d123d603b)
 
 
+y para fnalizar podemos seleccionar el producto que deseamos ver un detalle y obtenemos el siguiente **detalle dentro del sistema**.
 
 ![{2A881258-5EED-42F9-9018-D01A1D9CA68F}](https://github.com/user-attachments/assets/37ae62b7-603c-4183-bbfb-0280e3163d9b)
 
-y para fnalizar podemos seleccionar el producto que deseamos ver un detalle y obtenemos el siguiente **detalle dentro del sistema**.
+
 
 
