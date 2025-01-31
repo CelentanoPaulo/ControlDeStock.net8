@@ -31,3 +31,9 @@ Este boton nos permite seleccionar un producto **YA CARGADO** y eliminarlo.
 ![{181852F4-64C1-4BC8-954F-FDAB8E3EE852}](https://github.com/user-attachments/assets/8b8495d9-0156-489b-bab7-60e7ba47ba80)
 
 El siguiente boton nos permite seleccionar un producto ya cargado y **MODIFICARLO**.
+
+
+![{31CA76C7-5B00-48C7-988E-295E4F15CB48}](https://github.com/user-attachments/assets/ba93fca0-0f62-4060-913d-48e4161c3ec3)
+
+
+Este boton nos permite calcular un porcentaje ingresando el valor del producto y el porcentaje que deseamos calcular. 
