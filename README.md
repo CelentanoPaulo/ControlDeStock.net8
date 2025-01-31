@@ -37,3 +37,26 @@ El siguiente boton nos permite seleccionar un producto ya cargado y **MODIFICARL
 
 
 Este boton nos permite calcular un porcentaje ingresando el valor del producto y el porcentaje que deseamos calcular. 
+
+
+![{2E8EC374-D456-4882-996C-26563F401A89}](https://github.com/user-attachments/assets/d5bc5a36-a0d9-47b3-867e-506cdd051021)
+
+
+El siguiente boton nos permite generar un **ARCHIVO CSV** con el detalle especifico de los distintos productos cargados como podemos observar a continuacion.
+
+
+![{7AFB520A-5BDC-485E-8533-D48D82F67998}](https://github.com/user-attachments/assets/1de8f4d8-f71d-404d-82b5-3334c02aa11f)
+
+
+aca podemos observar el detalle de los productos para asi poder llevar un mejor control y obtener una mejor visualizacion del registro.
+
+![{CA9E6DE8-1571-4771-8442-B3BB05008904}](https://github.com/user-attachments/assets/c4c99b6c-7447-402e-961d-4f28c2c5ff2c)
+
+a continuacion vemos como **CARGAR UNA VENTA**, donde se ingresa la cantidad de kg vendidas, el monto en $ y seleccionamos el producto que hemos vendido.
+
+
+![{2A881258-5EED-42F9-9018-D01A1D9CA68F}](https://github.com/user-attachments/assets/37ae62b7-603c-4183-bbfb-0280e3163d9b)
+
+y para fnalizar podemos seleccionar el producto que deseamos ver un detalle y obtenemos el siguiente **detalle dentro del sistema**.
+
+
