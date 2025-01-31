@@ -50,7 +50,7 @@ El siguiente boton nos permite generar un **ARCHIVO CSV** con el detalle especif
 
 aca podemos observar el detalle de los productos para asi poder llevar un mejor control y obtener una mejor visualizacion del registro.
 
-![{CA9E6DE8-1571-4771-8442-B3BB05008904}](https://github.com/user-attachments/assets/c4c99b6c-7447-402e-961d-4f28c2c5ff2c)
+
 
 a continuacion vemos como **CARGAR UNA VENTA**, donde se ingresa la cantidad de kg vendidas, el monto en $ y seleccionamos el producto que hemos vendido.
 
